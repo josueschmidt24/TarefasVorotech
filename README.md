@@ -56,7 +56,7 @@ npm install
 npm start       # ou npm run dev se quiser hot reload
 ```
 4. A API ficará disponível em:
-```bash
+```link
 http://localhost:3333/timenow?tz=America/Sao_Paulo
 ```
 
@@ -72,7 +72,7 @@ npm install
 npm start       # ou npm run dev se quiser hot reload
 ```
 4. A API ficará disponível em:
-```bash
+```link
 http://localhost:3000
 ```
 
