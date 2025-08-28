@@ -23,10 +23,9 @@ Este projeto contém duas partes integradas:
 
 ### API
 - Endpoint: `/timenow?tz=America/Sao_Paulo`
-- Retorna data/hora no formato ISO 8601.
+- Retorna data/hora no formato ISO 8601 (YYYY-MM-DDTHH:mm:ss.sssZ).
 - Validação de timezone.
 - Consulta NTP realizada apenas quando o endpoint é chamado.
-- Tratamento de erros detalhado.
 
 ---
 
@@ -37,10 +36,46 @@ Este projeto contém duas partes integradas:
 
 ---
 
+## Pré-requisitos
+- Node.js instalado
+- npm
+- Navegador (Chrome, Edge, Firefox ou outro)
+
+---
+
 ## Como rodar o projeto
 
-### API e Calculadora i3
+### API (Back-end)
+1. Abrir o terminal na pasta da API(api-timenow)
+2. Instalar dependências:
 ```bash
 npm install
-npm start     # para rodar normalmente
 ```
+3. Executar a API:
+```bash
+npm start       # ou npm run dev se quiser hot reload
+```
+4. A API ficará disponível em:
+```bash
+http://localhost:3333/timenow?tz=America/Sao_Paulo
+```
+
+### Calculadora i3 (Front-end)
+1. Abrir outro terminal na pasta da Calculadora de nota i3(nota-i3-app)
+2. Instalar dependências:
+```bash
+npm install
+```
+
+3. Executar a Calculadora de nota i3:
+```bash
+npm start       # ou npm run dev se quiser hot reload
+```
+4. A API ficará disponível em:
+```bash
+http://localhost:3000
+```
+
+## ⚠️ Importante
+- A API precisa estar sendo executada antes do front-end, para que o componente de hora (TimeDisplay) consiga buscar os dados.
+
