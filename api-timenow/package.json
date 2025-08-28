@@ -1,0 +1,33 @@
+{
+  "name": "api-timenow",
+  "version": "1.0.0",
+  "description": "API em Node.js que retorna data e hora atual usando NTP em ISO 8601",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "ntp",
+    "ISO8601",
+    "API",
+    "time",
+    "cors"
+  ],
+  "author": "Josué Santos Schmidt",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.0",
+    "luxon": "^3.4.4",
+    "morgan": "^1.10.0",
+    "ntp-client": "^0.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

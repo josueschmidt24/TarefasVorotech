@@ -1,0 +1,12 @@
+.nota-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  gap: 12px;
+}
+
+.input-group input {
+  margin-left: 5px;
+  padding: 4px 6px;
+  width: 60px;
+}

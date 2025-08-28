@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  background: linear-gradient(to bottom, #0b0b47, #141422);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* ocupa toda a tela */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  padding: 1em;
+  color: white;
+  border-bottom: 0.2px solid #ffffff10;
+}
+
+/* Main cresce para empurrar o footer para baixo */
+main {
+  flex: 1; /* ocupa espaço disponível */
+  color: #fff;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ffffff50;
+  margin: 0.4em 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+    background-color: #252222;
+    padding: 0.8em;
+}
+
+.info-rodape {
+    color: #FFFFFF;
+    font-size: 0.7em;
+    padding-left: 1em;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-right: 13em;
+}
+
+.redes img {
+    width: 2em;
+}
