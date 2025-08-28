@@ -60,7 +60,7 @@ npm start       # ou npm run dev se quiser hot reload
 http://localhost:3333/timenow?tz=America/Sao_Paulo
 ```
 
-### Calculadora i3 (Front-end)
+### Calculadora de nota i3 (Front-end)
 1. Abrir outro terminal na pasta da Calculadora de nota i3(nota-i3-app)
 2. Instalar dependências:
 ```bash
