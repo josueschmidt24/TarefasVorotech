@@ -25,7 +25,7 @@ Este projeto contém duas partes integradas:
 - Endpoint: `/timenow?tz=America/Sao_Paulo`
 - Retorna data/hora no formato ISO 8601 (YYYY-MM-DDTHH:mm:ss.sssZ).
 - Validação de timezone.
-- Consulta NTP realizada apenas quando o endpoint é chamado.
+- Consulta um servidor NTP apenas quando o endpoint é chamado.
 
 ---
 

@@ -8,9 +8,10 @@ function NotaCalculator() {
     C: "",
     D: "",
     FF: "",
+    TRCA: "",
   });
 
-  const pesos = { A: 10, B: 8, C: 6, D: 3, FF: 1 };
+  const pesos = { A: 10, B: 8, C: 6, D: 3, FF: 1, TRCA: 2 };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,7 +42,7 @@ function NotaCalculator() {
 
   return (
     <div className="nota-calculator">
-      {["A", "B", "C", "D", "FF"].map((grade) => (
+      {["A", "B", "C", "D", "FF", "TRCA"].map((grade) => (
         <div key={grade} className="input-group">
           <label>
             {grade}:{" "}
@@ -57,6 +58,12 @@ function NotaCalculator() {
       ))}
       <h3>Total de conceitos lançados: {totalAlunos}</h3>
       <h3>Nota I3: {i3.toFixed(2)}</h3>
+
+      <p className="explicacao">
+        <strong>Legenda:</strong> <br />
+        A = 10 &nbsp; | &nbsp; B = 8 &nbsp; | &nbsp; C = 6 &nbsp; | &nbsp; D = 3 &nbsp; | &nbsp; FF = 1 &nbsp; | &nbsp; 
+        TRCA = 2 (Trancamento ou Cancelamento)
+      </p>
     </div>
   );
 }
